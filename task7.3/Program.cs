@@ -32,6 +32,6 @@ for (int j=0; j<columnsCount; j++)
         total += (twoDimArray[i,j]);
     }
     average = total / linesCount;
-    averageArray[j] = average;
+    averageArray[j] = Math.Round(average, 1);
 }
-Console.WriteLine(string.Join(";", averageArray)); // вывод массива
+Console.WriteLine(string.Join("; ", averageArray)); // вывод массива
